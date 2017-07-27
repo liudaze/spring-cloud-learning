@@ -12,6 +12,7 @@
 		<module>eureka-consumer-ribbon</module>
 		<module>eureka-consumer-feign</module>
 		<module>eureka-consumer-feign-api</module>
+		<module>config-server-git</module>
 	</modules>
 
 	<parent>
