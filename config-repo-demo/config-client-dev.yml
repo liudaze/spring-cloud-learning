@@ -1,4 +1,5 @@
 info:
   profile: dev
+from: dev
 current.env: dev
 dev-prop: dev-value
