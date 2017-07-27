@@ -6,5 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/liudaze/spring-cloud-learning.git
+          search-paths:
+          - config-repo-demo
 server:
   port: 1201
