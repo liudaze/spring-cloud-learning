@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: consumer-ribbon-hystrix
+server:
+  port: 2501
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/

@@ -1,5 +1,7 @@
 package com.ldz.controller;
 
+import java.util.Random;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +15,16 @@ public class DcController {
 
 	@GetMapping("/dc")
 	public String dc() {
+		long millis = new Random().nextInt(2000);
+		try {
+			System.out.println(millis);
+			Thread.sleep(millis);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		String services = "Services: " + discoveryClient.getServices();
 		System.out.println(services);
 		return services;
 	}
+	
 }
