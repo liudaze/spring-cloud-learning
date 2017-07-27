@@ -1,0 +1,4 @@
+info:
+  profile: test
+current.env: test
+test-prop: test-value
