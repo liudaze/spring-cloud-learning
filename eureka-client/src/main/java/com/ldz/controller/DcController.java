@@ -16,12 +16,12 @@ public class DcController {
 	@GetMapping("/dc")
 	public String dc() {
 		long millis = new Random().nextInt(2000);
-		try {
-			System.out.println(millis);
-			Thread.sleep(millis);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		System.out.println(millis);
+//		try {
+//			Thread.sleep(millis);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		String services = "Services: " + discoveryClient.getServices();
 		System.out.println(services);
 		return services;
